@@ -1,3 +1,4 @@
+How to setup this project
 Download this Repository as a ZIP file
 
 Database
