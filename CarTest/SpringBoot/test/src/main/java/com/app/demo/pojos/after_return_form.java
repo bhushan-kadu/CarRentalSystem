@@ -1,0 +1,71 @@
+package com.app.demo.pojos;
+
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.MapsId;
+import javax.persistence.OneToOne;
+
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+import lombok.ToString;
+
+@Entity
+ 
+@Getter
+@Setter
+@ToString(exclude = { "order" })
+public class after_return_form {
+	@Id
+	private long o_id;
+	private String Condition_after_return;
+	private String Comments;
+	@OneToOne
+	@JoinColumn(name = "o_id")
+	@MapsId
+	private Orders_Details order;
+
+	@Override
+	public String toString() {
+		return "after_return_form [o_id=" + o_id + ", Condition_after_return=" + Condition_after_return + ", Comments="
+				+ Comments + "]";
+	}
+
+	public after_return_form() {
+		super();
+	}
+
+	public long getO_id() {
+		return o_id;
+	}
+
+	public void setO_id(long o_id) {
+		this.o_id = o_id;
+	}
+
+	public String getCondition_after_return() {
+		return Condition_after_return;
+	}
+
+	public void setCondition_after_return(String condition_after_return) {
+		Condition_after_return = condition_after_return;
+	}
+
+	public String getComments() {
+		return Comments;
+	}
+
+	public void setComments(String comments) {
+		Comments = comments;
+	}
+
+	public Orders_Details getOrder() {
+		return order;
+	}
+
+	public void setOrder(Orders_Details order) {
+		this.order = order;
+	}
+
+}
