@@ -8,7 +8,6 @@ Database
 2. Follow https://dev.mysql.com/doc/refman/5.7/en/windows-installation.html#windows-installation-simple and install Mysql
 3. When asked for password use password from file CarRentalSystem-main\CarTest\SpringBoot\test\src\main\resources\application.properties
 4. Open MySql workbench (search in windows search for this)
-4. Create all tables mentioned in Group1_Project_Synopsis.docx page number 24 to 28
 
 Backend
 1. Install Intellij Community edition https://www.jetbrains.com/idea/download/?section=windows#:~:text=and%20Kotlin%20enthusiasts-,Download,-.exe
